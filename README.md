@@ -1,10 +1,26 @@
 # Resume Auto Tailor
 
+[![skills.sh](https://skills.sh/b/maxzhangg/resume-auto-tailor)](https://skills.sh/maxzhangg/resume-auto-tailor)
+
+Evidence-grounded resume tailoring with guided first-time setup, configurable preferences, read-only review, and HTML/PDF quality checks.
+
 一个可分享的 coding-agent skill：根据职位描述定制简历，检查事实来源、项目匹配、文字质量与最终 PDF。支持 Codex 等能够读取 `SKILL.md`、运行 Python/Node 命令和查看图片的 agent。
 
 包内只有通用代码、指南、空白模板和偏好示例。用户的简历、偏好、职位描述及生成结果保存到自己的工作目录。
 
 ## 安装与第一次使用
+
+通过官方 [skills CLI](https://github.com/vercel-labs/skills) 安装（Node.js 22.20+）：
+
+```bash
+npx skills add maxzhangg/resume-auto-tailor
+```
+
+按提示选择你的 coding agent。默认安装到当前项目；希望跨项目使用时，在命令末尾添加 `-g`。只查看可安装内容可添加 `--list`。
+
+After installation, ask your agent: **Use resume-auto-tailor to guide me through setting up my master resume and preferences.** The agent will check your private workspace and walk through any missing setup before tailoring. Python, browser, and PDF-rendering dependencies are prepared separately during setup; the skills CLI installs the skill files.
+
+分享时可直接发送本仓库链接和上面的安装命令。[skills.sh](https://skills.sh/maxzhangg/resume-auto-tailor) 根据安装记录自动收录；仓库可安装不代表已立即出现在搜索或排行榜中。
 
 把整个目录作为 `resume-auto-tailor` skill 安装到你的 agent 支持的 skills 目录；也可以直接让 agent 打开本仓库的 `SKILL.md`。保留 scripts、references、assets 等配套文件。
 
