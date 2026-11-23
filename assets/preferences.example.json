@@ -1,0 +1,14 @@
+{
+  "schema_version": "resume-preferences/v1",
+  "setup_complete": false,
+  "language": "",
+  "paper_size": "",
+  "expected_pages": null,
+  "max_pages": null,
+  "section_order": [],
+  "include_summary": false,
+  "project_count": null,
+  "fallback_policy": "matched_only",
+  "skill_order": "Prioritize supported skills relevant to the job description.",
+  "experience_rules": []
+}

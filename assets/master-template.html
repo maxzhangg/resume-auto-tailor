@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{NAME}} — Resume</title>
+<style>
+/* A neutral starter, not a candidate resume. Choose paper size in preferences. */
+* { box-sizing: border-box; }
+body { font: 11pt/1.4 Arial, sans-serif; color: #17202a; margin: 0; }
+h1 { font-size: 22pt; margin: 0 0 4pt; }
+h2 { font-size: 12pt; border-bottom: 1px solid #aaa; margin: 12pt 0 6pt; }
+.contact { margin: 0 0 8pt; }
+.entry-head { display: flex; justify-content: space-between; gap: 12pt; }
+.entry-title { font-weight: bold; }
+.entry-meta { white-space: nowrap; }
+.entry-subhead { font-style: italic; }
+.entry { margin-bottom: 8pt; }
+p, ul { margin: 4pt 0; }
+ul { padding-left: 16pt; }
+li { margin: 2pt 0; }
+@media print {
+  section, .entry, p, ul, li { break-inside: auto; page-break-inside: auto; }
+  h2, .entry-head, .entry-subhead { break-after: avoid; page-break-after: avoid; }
+  p, li { orphans: 2; widows: 2; }
+}
+</style>
+</head>
+<body><main>
+<header><h1>{{NAME}}</h1><p class="contact">{{CONTACT_DETAILS}}</p></header>
+<!-- Reorder sections during setup; remove unused sections and placeholder entries. -->
+<section><h2>Skills</h2><ul class="skills"><li>{{VERIFIED_SKILLS}}</li></ul></section>
+<section><h2>Experience</h2><article class="entry">
+<div class="entry-head"><div class="entry-title">{{EXACT_ROLE_TITLE}}</div><div class="entry-meta">{{DATES}}</div></div>
+<div class="entry-subhead">{{EMPLOYER_AND_LOCATION}}</div>
+<ul class="bullets"><li>{{SUPPORTED_ACTION_AND_RESULT}}</li></ul>
+</article></section>
+<section><h2>Education</h2><article class="entry">
+<div class="entry-head"><div class="entry-title">{{EXACT_QUALIFICATION}}</div><div class="entry-meta">{{EDUCATION_DATES}}</div></div>
+<div class="entry-subhead">{{INSTITUTION}}</div>
+</article></section>
+<section><h2>Projects</h2><article class="entry">
+<div class="entry-head"><div class="entry-title">{{PROJECT_NAME}}</div><div class="entry-meta">{{PROJECT_DATES}}</div></div>
+<p class="entry-summary">{{VERIFIED_PROJECT_PURPOSE}}</p>
+<ul class="bullets"><li>{{VERIFIED_PROJECT_CONTRIBUTION}}</li></ul>
+</article></section>
+</main></body></html>

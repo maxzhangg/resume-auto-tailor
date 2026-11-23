@@ -1,0 +1,4 @@
+interface:
+  display_name: "Resume Auto Tailor"
+  short_description: "Guided setup, truthful tailoring, and resume PDF checks"
+  default_prompt: "Use $resume-auto-tailor to set up my resume and preferences if needed, then tailor my resume to this job and verify the PDF."

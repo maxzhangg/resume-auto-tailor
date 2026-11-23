@@ -1,0 +1,8 @@
+{
+  "name": "resume-auto-tailor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portable evidence-grounded resume tailoring skill",
+  "scripts": { "test": "python -m unittest discover -s tests -v" },
+  "dependencies": { "playwright": "1.60.0" }
+}
